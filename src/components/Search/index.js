@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useContext, createContext } from "react";
 import "./search.css";
+
+const myContext = createContext('search')
 
 const Search = () => {
   const [search, setSearch] = useState("");
